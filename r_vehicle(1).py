@@ -78,7 +78,11 @@ model = YOLO("yolov8n.pt", "v8")
 org = str(os.getcwd())
 
 # Video's path
-vid = 'C:/Users/ADMIN/Desktop/code/python/TTS/testt/sample_trim.mp4'
+vid = 'C:/Users/ADMIN/Desktop/code/python/TTS/testt/trim.mp4'
+
+result = './result'
+if not os.path.exists(result): 
+    os.mkdir(result)
 
 # Crop path
 path = './result/vehicle'
